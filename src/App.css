@@ -1,0 +1,13 @@
+.App {
+  background-color: #203731;
+  color: #ffb612;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+}
+
+/* This adds padding so content doesn't get stuck to navbar*/
+.main-content {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
