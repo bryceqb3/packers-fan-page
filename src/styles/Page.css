@@ -56,3 +56,19 @@
   background-color: #203731; /* Packers green */
   color: white;
 }
+
+.social-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.social-embed {
+  width: 100%;
+}
