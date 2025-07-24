@@ -1,32 +1,37 @@
-import React from 'react';
-import { Tweet } from 'react-tweet'; // The recommended component for embeds
+import React, { useEffect } from 'react';
 import '../styles/Page.css';
 
 function Home() {
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.setAttribute('src', 'https://platform.twitter.com/widgets.js');
+    script.setAttribute('async', '');
+    document.body.appendChild(script);
+  }, []);
+
   return (
     <div className="page">
       <h2>Welcome to the Packers Fan Hub!</h2>
       <p>Stay updated with the latest from the Packers community.</p>
 
       <div className="social-section">
-        
-        {/* X (Twitter) Embed */}
+        {/* Twitter Embed */}
         <div className="social-embed">
-          {/* This component handles everything for you.
-            Just find the tweet's ID from its URL and place it here.
-            URL: https://x.com/packers/status/1815852528773341328
-            ID: 1815852528773341328
-          */}
-          <Tweet id="1948122326362374635" />
+          <blockquote className="twitter-tweet">
+            <p lang="en" dir="ltr">
+              GB already has a lotta love for this guy.
+              <a href="https://twitter.com/emplifybellin?ref_src=twsrc%5Etfw">@emplifybellin</a>{' '}
+              <a href="https://t.co/defey1sZx0">pic.twitter.com/defey1sZx0</a>
+            </p>
+            &mdash; Green Bay Packers (@packers){' '}
+            <a href="https://twitter.com/packers/status/1948171272887886065?ref_src=twsrc%5Etfw">
+              July 24, 2025
+            </a>
+          </blockquote>
         </div>
 
         {/* YouTube Embed */}
         <div className="social-embed">
-          {/*
-            Replace 'VIDEO_ID_HERE' with the ID from the YouTube video URL.
-            URL: https://www.youtube.com/watch?v=dQw4w9WgXcQ
-            ID: dQw4w9WgXcQ
-          */}
           <iframe
             width="100%"
             height="400"
@@ -40,11 +45,6 @@ function Home() {
 
         {/* Instagram Embed */}
         <div className="social-embed">
-          {/*
-            Replace 'POST_ID_HERE' with the ID from the Instagram post URL.
-            URL: https://www.instagram.com/p/C-Clq25y9bT/
-            ID: C-Clq25y9bT
-          */}
           <iframe
             src="https://www.instagram.com/p/DMQwh5Kub9c/embed"
             width="100%"
@@ -55,7 +55,6 @@ function Home() {
             title="Instagram Post"
           />
         </div>
-        
       </div>
     </div>
   );
