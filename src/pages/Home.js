@@ -69,7 +69,6 @@ function Home() {
               src="https://www.instagram.com/p/DMQwh5Kub9c/embed"
               width="100%"
               height="400"
-              allowTransparency="true"
               scrolling="no"
               style={{ border: 'none', overflow: 'hidden' }}
               title="Instagram Post"
