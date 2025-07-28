@@ -7,11 +7,6 @@ function Home() {
     twitterScript.setAttribute('src', 'https://platform.twitter.com/widgets.js');
     twitterScript.setAttribute('async', '');
     document.body.appendChild(twitterScript);
-
-    const instagramScript = document.createElement('script');
-    instagramScript.setAttribute('src', 'https://www.instagram.com/embed.js');
-    instagramScript.setAttribute('async', '');
-    document.body.appendChild(instagramScript);
   }, []);
 
   return (
