@@ -4,7 +4,7 @@
   align-items: center;
   text-align: center;
   padding: 20px;
-  margin-top: 60px; /* Adjust based on navbar height */
+  margin-top: 20px; /* Adjust based on navbar height */
 }
 
 .schedule-grid {
@@ -64,8 +64,6 @@
   align-items: flex-start; /* Align to top so they stay aligned */
   gap: 1rem;
   overflow-x: auto;
-  margin-top: 2rem;
-  padding: 1rem;
 }
 
 .social-embed {
@@ -108,7 +106,7 @@
   height: 40px;
   background-color: #f7f5f5;
   border: 1px solid #0a0a0a;
-  border-radius: 4px;
+  border-radius: 10px;
   text-decoration: none;
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -128,3 +126,5 @@
   object-fit: contain; /* ensures it fits nicely without distortion */
   display: block;
 }
+
+
