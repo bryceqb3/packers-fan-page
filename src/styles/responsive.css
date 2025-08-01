@@ -81,6 +81,25 @@
   }
 }
 
+.navbar {
+  display: flex;
+  justify-content: center; /* center horizontally */
+  align-items: center; /* center vertically */
+  text-align: center;
+}
+
+.navbar ul {
+  display: flex;
+  flex-direction: column; /* stack links vertically if needed */
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li {
+  margin: 5px 0; /* space between links */
+}
+
 /* Very small phones */
 @media (max-width: 480px) {
   .game-card {
