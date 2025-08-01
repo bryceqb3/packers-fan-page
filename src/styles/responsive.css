@@ -64,6 +64,21 @@
   .countdown {
     font-size: 1.2rem;
   }
+
+  /* 📱 Standings table fix for mobile */
+  .standings-table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* smooth scroll on iOS */
+    white-space: nowrap; /* keep cells on one line */
+  }
+
+  .standings-table th,
+  .standings-table td {
+    font-size: 0.85rem; /* smaller text */
+    padding: 6px; /* smaller padding */
+  }
 }
 
 /* Very small phones */
