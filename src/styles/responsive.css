@@ -79,25 +79,33 @@
     font-size: 0.85rem; /* smaller text */
     padding: 6px; /* smaller padding */
   }
-}
 
-.navbar {
-  display: flex;
-  justify-content: center; /* center horizontally */
-  align-items: center; /* center vertically */
-  text-align: center;
-}
+  /* Navbar: centered horizontal row without stacking */
+  .navbar {
+    display: flex;
+    justify-content: center; /* center horizontally */
+    align-items: center; /* center vertically */
+    text-align: center;
+    flex-wrap: nowrap; /* prevent wrapping */
+    overflow-x: auto; /* horizontal scroll if needed */
+    -webkit-overflow-scrolling: touch; /* smooth scrolling on iOS */
+  }
 
-.navbar ul {
-  display: flex;
-  flex-direction: column; /* stack links vertically if needed */
-  align-items: center;
-  padding: 0;
-  margin: 0;
-}
+  .navbar ul {
+    display: flex;
+    flex-direction: row; /* keep links in one row */
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    gap: 1rem; /* spacing between links */
+    flex-wrap: nowrap; /* prevent wrapping */
+  }
 
-.navbar li {
-  margin: 5px 0; /* space between links */
+  .navbar li {
+    margin: 0; /* remove vertical margins */
+    white-space: nowrap; /* prevent link text from wrapping */
+  }
 }
 
 /* Very small phones */
