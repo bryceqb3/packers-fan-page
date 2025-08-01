@@ -1,4 +1,5 @@
 import './App.css';
+import './styles/responsive.css';
 import Navbar from './Navbar';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
